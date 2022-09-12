@@ -10,7 +10,7 @@
 		"node": ">= 12"
 	},
 	"scripts": {
-		"start:dev": "cross-env LOG_LEVEL=debug node src/app.js -e https://music.163.com",
+		"start:dev": "cross-env LOG_LEVEL=debug ENABLE_FLAC=true ENABLE_LOCAL_VIP=true JSON_LOG=true LOG_FILE=app.log MIN_BR=320000 MIGU_COOKIE='migu_music_sid=s%3Axd_FNeaewCwr8nPrjwpt43tzIuxtR7KD.J%2FXsccjXYnd7JhP%2FScTl6qC5TDFF%2FoJIhlL2lHtNVNI;' node src/app.js",
 		"start": "cross-env node src/app.js -e https://music.163.com",
 		"build": "webpack",
 		"pkg": "pkg . --out-path=dist/",
