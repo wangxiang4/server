@@ -11,7 +11,7 @@ services:
             LOG_FILE: app.log
             MIN_BR: 320000
             MIGU_COOKIE: 'migu_music_sid=s%3Axd_FNeaewCwr8nPrjwpt43tzIuxtR7KD.J%2FXsccjXYnd7JhP%2FScTl6qC5TDFF%2FoJIhlL2lHtNVNI;'
-        command: node app.js -p 40042:40043 -a 101.42.231.100
+        command: -p 40042:40043
         ports:
             - ${HTTP_PROXY_PORT:-40042}:40042
-            - ${HTTPS_PROXY_PORT:-40042}:40043
+            - ${HTTPS_PROXY_PORT:-40043}:40043
